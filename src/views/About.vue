@@ -1,5 +1,17 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <AboutPage msg='About Manga DK'/>
   </div>
 </template>
+
+<script lang="ts">
+import AboutPage from '@/components/AboutPage.vue';
+import { defineComponent } from 'vue';
+
+export default defineComponent({
+  name: 'About',
+  components: {
+    AboutPage,
+  },
+});
+</script>
